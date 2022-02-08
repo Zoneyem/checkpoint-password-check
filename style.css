@@ -1,0 +1,60 @@
+body {
+  padding: 0px;
+
+  box-sizing: border-box;
+
+  max-width: 650px;
+  margin: 0 auto;
+  background-color: lightsalmon;
+}
+
+/*font-family: 'Arvo', serif;
+font-family: 'Lobster', cursive;
+font-family: 'Open Sans', sans-serif;*/
+.mainContainer {
+  display: block;
+  justify-content: center;
+  align-items: center;
+}
+
+.appContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  font-family: "Lobster", cursive;
+  font-size: 100px;
+  color: white;
+  text-shadow: 2px 2px #080808;
+}
+
+input,
+button {
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 2px solid black;
+  text-align: center;
+}
+
+button {
+  border-radius: 2px solid black;
+  color: white;
+  background-color: #080808;
+}
+
+p{
+ text-align: center;
+  font-family: "Open Sans", sans-serif;
+   
+}
+
+
+.hidePassword{
+    display: none;
+}
+
+.showPassword{
+    display: block;
+}
