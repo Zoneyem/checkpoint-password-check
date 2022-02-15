@@ -19,30 +19,34 @@
         <h1>Password Check</h1>
       </div>
       <div class="appContainer">
-        <form>
-          <input
-            id="passOne"
-            type="password"
-            value=""
-            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10} "
-          />
-          <input
-            id="passTwo"
-            type="password"
-            value=""
-            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10}"
-          />
+        <div class="formContainer">
+          <form>
+            <input
+              id="passOne"
+              type="password"
+              value=""
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10} "
+            />
+            <input
+              id="passTwo"
+              type="password"
+              value=""
+              pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{10}"
+            />
 
-          <button>
-            <span class="showPassword">Show Password</span>
-            <span class="hidePassword">Hide Password</span>
-          </button>
+            <button>
+              <span class="showPassword">Show Password</span>
+              <span class="hidePassword">Hide Password</span>
+            </button>
+          </form>
+        </div>
+        <div class="options">
           <p class="equalPass">Passwords are equal ❌</p>
           <p class="smallLet">Lower Case Letters❌</p>
           <p class="capitalLet">Upper Case Letters❌</p>
           <p class="containNumbers">Contains Numbers❌</p>
           <p class="SufficientPass">At least 10 characters long❌</p>
-        </form>
+        </div>
       </div>
     </div>
 

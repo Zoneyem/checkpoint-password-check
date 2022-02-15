@@ -8,10 +8,8 @@
     margin: 0 auto;
     background-color: lightsalmon;
     margin: 0 auto;
-
+    text-align: center;
   }
-
- 
 
   /*font-family: 'Arvo', serif;
 font-family: 'Lobster', cursive;
@@ -23,18 +21,79 @@ font-family: 'Open Sans', sans-serif;*/
   }
 
   .appContainer {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    
+    display: block;
   }
-  h1 {
-    font-family: "Lobster", cursive;
-    font-size: 70px;
-    color: white;
-    text-shadow: 2px 2px #080808;
+}
+
+form {
+  display: inline-block;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  font-family: "Lobster", cursive;
+  font-size: 70px;
+  color: white;
+  text-shadow: 2px 2px #080808;
+  text-align: center;
+}
+
+input,
+button {
+  display: block;
+  margin-bottom: 10px;
+  font-family: "Open Sans", sans-serif;
+  font-weight: bold;
+  border-radius: 2px solid black;
+  width: 200px;
+  height: 40px;
+}
+
+button {
+  border-radius: 2px solid black;
+  color: white;
+  background-color: #080808;
+  width: 210px;
+}
+
+p {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+}
+
+.hidePassword {
+  display: none;
+}
+
+.showPassword {
+  display: block;
+}
+
+@media only screen and (min-width: 700px) {
+  body {
+    padding: 0px;
+
+    box-sizing: border-box;
+
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: lightsalmon;
+    margin: 0 auto;
     text-align: center;
+  }
+
+  .mainContainer {
+    display: block;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .appContainer {
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
   }
 
   input,
@@ -45,28 +104,10 @@ font-family: 'Open Sans', sans-serif;*/
     font-weight: bold;
     border-radius: 2px solid black;
     width: 200px;
-    height: 40px;
-    
+    height: 30px;
   }
 
-  button {
-    border-radius: 2px solid black;
-    color: white;
-    background-color: #080808;
-    width: 210px;
+  .formContainer {
+    margin-top: 40px;
   }
-
-  p {
-    text-align: center;
-    font-family: "Open Sans", sans-serif;
-  }
-
-  .hidePassword {
-    display: none;
-  }
-
-  .showPassword {
-    display: block;
-  }
-
- }
+}
